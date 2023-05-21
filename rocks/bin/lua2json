@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LUAROCKS_SYSCONFDIR='/usr/local/etc/luarocks' exec '/usr/bin/lua5.2' -e 'package.path="/home/meleeman/BackgroundChanger/rocks/share/lua/5.2/?.lua;/home/meleeman/BackgroundChanger/rocks/share/lua/5.2/?/init.lua;"..package.path;package.cpath="/home/meleeman/BackgroundChanger/rocks/lib/lua/5.2/?.so;"..package.cpath;local k,l,_=pcall(require,"luarocks.loader") _=k and l.add_context("lua-cjson","2.1.0.10-1")' '/home/meleeman/BackgroundChanger/rocks/lib/luarocks/rocks-5.2/lua-cjson/2.1.0.10-1/bin/lua2json' "$@"
