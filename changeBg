@@ -5,5 +5,26 @@ file_path="$HOME/.local/src/backgroundChanger/"
 
 cd "$file_path"
 
-lua "$file_path/backgroundChanger.lua" 
+# Define the command-line options
+
+option1=""
+
+# Check if the first argument is provided
+if [ -n "$1" ]; then
+    option1="$1"
+fi
+
+
+echo $option1 $option2
+
+# Run the Lua file with the command-line options
+
+if [ -z "$option1" ]; then
+	echo $option1
+	lua "$file_path/backgroundChanger.lua"
+else
+	echo $option1
+	lua "$file_path/backgroundChanger.lua" "$option1" 
+fi
+
 

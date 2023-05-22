@@ -19,3 +19,4 @@ run install.sh
 you may need to refresh i3wm or set up a new shell to check the installation. 
 
 in a new terminal type changeBg 
+
