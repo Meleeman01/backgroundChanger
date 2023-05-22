@@ -1,9 +1,9 @@
 #i3wm Background Changer
 
 #requires
--lua5.2
--feh
--a new directory /home/username/Pictures/bg-pics
+1.lua5.2
+2.feh
+3.a new directory /home/username/Pictures/bg-pics
 
 #instructions
 
