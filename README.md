@@ -18,5 +18,13 @@ run install.sh
 
 you may need to refresh i3wm or set up a new shell to check the installation. 
 
-in a new terminal type changeBg 
+in a new terminal type changeBg , or use dmenu and type until you see changeBg .
+
+## Recommended addition to i3 config 
+
+exec feh --randomize --bg-scale /home/meleeman/Pictures/bg-pics/
+bindsym $mod+Shift+Return exec changeBg
+bindsym $mod+Shift+equal exec changeBg --next
+bindsym $mod+Shift+minus exec changeBg --previous
+
 
