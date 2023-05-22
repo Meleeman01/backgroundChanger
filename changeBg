@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Define the file path and arguments
+file_path="$HOME/.local/src/backgroundChanger/"
+
+cd "$file_path"
+
+lua "$file_path/backgroundChanger.lua" 
+
