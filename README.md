@@ -1,11 +1,11 @@
-#i3wm Background Changer
+# i3wm Background Changer
 
-#requires
+## requires
 1.lua5.2
 2.feh
 3.a new directory /home/username/Pictures/bg-pics
 
-#instructions
+# instructions
 
 please find the line in backgroundChanger.lua and edit it to your directory you want to have background Changer read the files to use for your backgrounds to change through. should be line 25 and is commented like so.
 
