@@ -43,6 +43,21 @@ dependencies = {
          }
       }
    },
+   lrandom = {
+      ["20180729-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
    ["lua-cjson"] = {
       ["2.1.0.10-1"] = {
          {
@@ -96,6 +111,9 @@ modules = {
    lua2json = {
       "lua-cjson/2.1.0.10-1"
    },
+   random = {
+      "lrandom/20180729-1"
+   },
    re = {
       "lpeg/1.0.2-1"
    }
@@ -122,6 +140,18 @@ repository = {
             modules = {
                lpeg = "lpeg.so",
                re = "re.lua"
+            }
+         }
+      }
+   },
+   lrandom = {
+      ["20180729-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               random = "random.so"
             }
          }
       }
